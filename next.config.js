@@ -41,15 +41,10 @@ const plugins = [
 ];
 
 const nextConfig = {
-  distDir: "build",
   swcMinify: true,
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback.fs = false;
-      // FIX this
-      // Disable minimize to make it work with Candy Machine template
-      // minimization brakes Public Key names
-      // config.optimization.minimize = false;
     }
     return config;
   },
