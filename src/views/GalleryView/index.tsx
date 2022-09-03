@@ -123,7 +123,7 @@ export const GalleryView: FC = ({}) => {
                       <Loader />
                     </div>
                   ) : (
-                    <NftList nfts={nfts} error={error} />
+                    <NftList nfts={nfts} error={error as Error} />
                   )}
                 </div>
               </div>

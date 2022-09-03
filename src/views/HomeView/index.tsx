@@ -41,7 +41,7 @@ export const HomeView: FC = ({}) => {
                   Daisy UI.
                 </p>
                 <p className="mb-5">
-                  Sollana wallet adapter is connected and ready to use.
+                  Solana wallet adapter is connected and ready to use.
                 </p>
                 <p>
                   {publicKey ? <>Your address: {publicKey.toBase58()}</> : null}
@@ -67,10 +67,17 @@ export const HomeView: FC = ({}) => {
                   </a>
                 </Link>
               </li> */}
-              <li>
+              {/* <li className="mb-5">
                 <Link href="/tweeter">
                   <a className="mb-5 text-4xl font-bold hover:underline">
                     🐦 -- Solana Tweeter
+                  </a>
+                </Link>
+              </li> */}
+              <li>
+                <Link href="/collections">
+                  <a className="mb-5 text-4xl font-bold hover:underline">
+                    🗃️ -- Metaplex Collections
                   </a>
                 </Link>
               </li>
